@@ -25,13 +25,11 @@ Uma interface moderna e totalmente responsiva para serviços de aluguel de carro
 
 - HTML5
 - CSS3 (ou Tailwind CSS, se aplicável)
-- JavaScript (ou React/Vue/Angular – especifique conforme o projeto)
 - Ícones (como Font Awesome ou outro kit de ícones)
-- Frameworks (caso tenha utilizado algum)
 
 ---
 
 ## 📦 Instalação
 
 1. Clone o repositório:
-git clone https://github.com/seu-usuario/car-rental.git
+git clone https://github.com/Jose7764/Carzin
