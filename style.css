@@ -36,14 +36,17 @@ body {
 }
 
 .logo {
-    font-family: OutfitExtraBold;
+    font-family: OutfitNormal;
     color: #FE5B3E;
-    font-size: 36px;
-    font-weight: 800;
     padding: 3rem 1rem 1rem 2rem;
     display: flex;
     justify-content: space-between;
     width: 100vw;
+}
+
+.logo p{
+  font-weight: 700;
+  font-size: 36px;
 }
 
 .headerMobile{
@@ -56,6 +59,117 @@ body {
     align-items: center;
     
 }
+
+.headerDesktop{
+  display: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+.topSession{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.main-header {
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-menu {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #f6533b;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-outline {
+  padding: 8px 16px;
+  border: 1.5px solid #f6533b;
+  color: #f6533b;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background-color: #f6533b;
+  color: white;
+}
+
+.btn-filled {
+  padding: 8px 16px;
+  background-color: #f6533b;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-filled:hover {
+  background-color: #d84830;
+}
+
+@media (min-width: 768px) {
+  .headerMobile{
+    display: none;
+  }
+  .headerDesktop{
+    display:block
+  }
+
+  .logo{
+    position: absolute;
+    margin-left: 1.3%;
+  }
+
+  .topSession{
+    flex-direction: row;
+    gap: 5%;
+    
+  }
+
+  .imageStart{
+    margin-left: 1.3%;
+    min-width: 40%;
+    height: 40vh;
+  }
+}
+
 
 .imageStart{
     background-image: url(/images/imageInicial.png);
