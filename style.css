@@ -77,8 +77,9 @@ body {
 }
 
 .startTitle{
+    padding-top: 3rem;
     color: #000000;
-     font-size: 3rem;
+    font-size: 3rem;
 }
 
 .startTitle2{
@@ -121,10 +122,11 @@ body {
     font-weight: 400;
 }
 
-.descriptionRecomen{
+.descriptionRecomend{
     display: flex;
-    align-items: start;
-    gap: 2rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    
 }
 
 #recomen2{
@@ -135,8 +137,10 @@ body {
     display: none;
 }
 
-.descriptionRecomen img{
-    align-self: end;
+.descriptionRecomend img{
+    justify-self: flex-end;
+    width: 3rem;
+    height: 1.3rem;
 }
 
 .how-it-works .subtitle {
@@ -396,7 +400,6 @@ h1 span {
   font-size: 0.875rem;
   color: var(--gray);
   margin: 0;
-  line-height: 1.5;
 }
 
 .try-btn {
@@ -405,15 +408,10 @@ h1 span {
   padding: 0.7rem 1.4rem;
   font-size: 0.95rem;
   color: var(--primary);
-  border: 1px solid var(--primary);
+  
   border-radius: 0.5rem;
   text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.try-btn:hover {
-  background-color: var(--primary);
-  color: white;
+  
 }
 
 .service-images {
@@ -459,3 +457,89 @@ h1 span {
     font-size: 1rem;
   }
 }
+
+
+   section.drive-care {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .text-content {
+      flex: 1;
+      max-width: 500px;
+    }
+
+    .text-content h5 {
+      color: #999;
+      letter-spacing: 1px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .text-content h1 {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      font-weight: 700;
+    }
+
+    .text-content h1 span {
+      color: #f6533b;
+    }
+
+    .text-content p {
+      margin: 20px 0;
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .text-content button {
+      padding: 10px 20px;
+      background-color: transparent;
+      color: #f6533b;
+      border: 1.5px solid #f6533b;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .text-content button:hover {
+      background-color: #f6533b;
+      color: white;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      flex: 1;
+    }
+
+    .feature-card {
+      background-color: #f9f9f9;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+    }
+
+    .feature-card img {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 10px;
+    }
+
+    .feature-card p {
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    @media (min-width: 900px) {
+      section.drive-care {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+    }
