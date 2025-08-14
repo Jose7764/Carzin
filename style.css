@@ -138,14 +138,15 @@ body {
   background-color: #d84830;
 }
 
-.imageStart {
-  background-image: url('/images/imageInicial.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+.imageStart_container {
+  display: flex;
+  justify-content: center;
   border-radius: 1rem;
   justify-self: center;
   margin : 2rem;
-
+  
+  width: 100vw;
+  overflow: hidden;
 }
 
 
@@ -153,27 +154,34 @@ body {
 .startContent {
   font-family: OutfitNormal;
   font-weight: 700;
-  justify-self: center;
+  justify-self: flex-end;
+  align-self: flex-end;
   padding: 2rem;
 }
 
 .startTitle {
+  font-family: OutfitExtraBold;
   padding-top: 3rem;
   color: #000000;
   font-size: 3rem;
+  line-height: 5.4rem;
 }
 
 .startTitle2 {
+  font-family: OutfitExtraBold;
   color: #FE5B3E;
   font-size: 3rem;
+    line-height: 5.4rem;
+
+
 }
 
 .subText {
-  color: #303030;
+  color: #3b3b3be7;
   font-family: OutfitNormal;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 24px;
   letter-spacing: 0.48px;
   opacity: 0.8;
@@ -767,7 +775,7 @@ section.drive-care {
 
   .logo {
     position: absolute;
-    margin-left: 3rem;
+  
   }
 
   .topSession {
@@ -778,9 +786,27 @@ section.drive-care {
   }
 
   .imageStart {
-    min-width: 42%;
-    margin-left: 2rem;
+    width: 100%;
+    height: 100%;
+    flex: 1;
+  }
+
+  .imageStart_container{
+    height: 100%;
     margin-top: 5rem;
+  }
+
+  .startTitle{
+    font-size: 5rem;
+  }
+
+  .startTitle2{
+    font-size: 5rem;
+    width: 75%;
+  }
+
+  .littleTitle{
+    display: inline-block;
   }
 
   .steps-container {
