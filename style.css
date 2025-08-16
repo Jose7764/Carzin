@@ -18,7 +18,7 @@
 }
 
 body {
-  font-family: 'Outfit', sans-serif;
+  font-family: OutfitNormal;
   background-color: var(--bg);
   margin: 0;
   padding: 0;
@@ -77,7 +77,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+/* ============================================================================= */
 .nav-menu {
   display: flex;
   justify-content: space-between;
@@ -137,6 +137,7 @@ body {
 .btn-filled:hover {
   background-color: #d84830;
 }
+/* ============================================================================= */
 
 .imageStart_container {
   display: flex;
@@ -149,13 +150,17 @@ body {
   overflow: hidden;
 }
 
+.imageStart{
+  width: 80%;
+}
+
 
 
 .startContent {
   font-family: OutfitNormal;
   font-weight: 700;
-  justify-self: flex-end;
-  align-self: flex-end;
+  justify-self: center;
+  align-self: center;
   padding: 2rem;
 }
 
@@ -179,12 +184,10 @@ body {
 .subText {
   color: #3b3b3be7;
   font-family: OutfitNormal;
-  font-size: 16px;
-  font-style: normal;
+  font-size: 1.1rem;
   font-weight: 300;
   line-height: 24px;
   letter-spacing: 0.48px;
-  opacity: 0.8;
   padding-top: 0.8rem;
 }
 
@@ -240,7 +243,7 @@ body {
   width: 3rem;
   height: 1.3rem;
 }
-
+/* ============================================================================= */
 .how-it-works .subtitle {
   color: #888;
   font-size: 1rem;
@@ -261,10 +264,9 @@ body {
 .how-it-works .description {
   max-width: 600px;
   margin: 20px auto 40px;
-  font-size: 15px;
   color: #666;
 }
-
+/* ============================================================================= */
 .steps-container {
   display: flex;
   flex-wrap: wrap;
@@ -333,7 +335,7 @@ h1 span {
 
 .description {
   color: var(--text-light);
-  font-size: 1rem;
+  font-size: 1.1rem;
   max-width: 40rem;
   margin: 1.2rem auto 2rem;
   line-height: 1.5;
@@ -387,6 +389,8 @@ h1 span {
   color: var(--text-light);
   line-height: 1.4;
 }
+/* ============================================================================= */
+
 
 .service-section {
   display: flex;
@@ -421,7 +425,7 @@ h1 span {
 }
 
 .service-text {
-  font-size: 1rem;
+  font-size: 1.19rem;
   color: var(--gray);
   line-height: 1.6;
   margin-bottom: 1.5rem;
@@ -449,25 +453,29 @@ h1 span {
 }
 
 .service-list h4 {
-  font-size: 1rem;
+  font-size: 1.35rem;
   color: var(--text);
   margin: 0 0 0.2rem;
+  font-weight: 500;
 }
 
 .service-list p {
-  font-size: 0.875rem;
-  color: var(--gray);
-  margin: 0;
+    font-size: 1.1rem;
+    color: var(--gray);
+    margin: 0;
+    font-weight: 300;
 }
 
 .try-btn {
   display: inline-block;
-  margin-top: 2rem;
-  padding: 0.7rem 1.4rem;
-  font-size: 0.95rem;
-  color: var(--primary);
-  border-radius: 0.5rem;
-  text-decoration: none;
+    margin-top: 2rem;
+    padding: 0.7rem 1.4rem;
+    font-size: 0.95rem;
+    color: var(--primary);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    border: 1px solid #f6533b;
+    font-weight: 600;
 }
 
 .service-images {
@@ -489,6 +497,8 @@ section.drive-care {
   max-width: 1200px;
   margin: auto;
 }
+/* ============================================================================= */
+
 
 .text-content {
   flex: 1;
@@ -564,7 +574,7 @@ section.drive-care {
   background: #f7f8f9;
   padding: 2rem;
   border-radius: 12px;
-  font-family: "Outfit", sans-serif;
+  font-family: OutfitNormal ;
 }
 
 .cars-label {
@@ -704,7 +714,7 @@ section.drive-care {
 
 
 }
-
+/* ============================================================================= */
 .btn-prev-next {
   background-color: #ff6749;
   border: none;
@@ -761,6 +771,65 @@ section.drive-care {
   background-color: #ff4b2a;
 }
 
+/* ============================================================================= */
+
+.hero-section {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      background: url('sua-imagem.jpg') center/cover no-repeat;
+    }
+
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 0 20px;
+    }
+
+    .hero-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .hero-content h1 span {
+      color: #FF5A3C;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #ddd;
+    }
+
+    .hero-content button {
+      padding: 0.8rem 2rem;
+      font-size: 1rem;
+      background-color: #FF5A3C;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      color: white;
+    }
+
+
 
 /* ======== Media Queries  ======== */
 
@@ -786,9 +855,11 @@ section.drive-care {
   }
 
   .imageStart {
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    height: auto;
     flex: 1;
+    min-width: 570px;
+    min-height: 850px;
   }
 
   .imageStart_container{
@@ -910,15 +981,38 @@ section.drive-care {
 
 
     .car-grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: repeat(4 , 1fr);
     }
   }
 
 
 
+@media (min-width: 1440px) {
+  .imageStart{
+   max-width: 570px;
+   max-height: 850px;
+  }
 
+  .imageStart_container{
+    display: flex;
+    justify-content: flex-start;
+    width: 37%;
+  }
+}
 
+@media (max-width: 769px) {
+  .hide{
+    display: none;
+  }
 
+  .cars-filters{
+    display: none;
+  }
+
+  .car-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 
