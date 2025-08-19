@@ -168,14 +168,14 @@ body {
   font-family: OutfitExtraBold;
   padding-top: 3rem;
   color: #000000;
-  font-size: 3rem;
+  font-size: 3.5rem;
   line-height: 5.4rem;
 }
 
 .startTitle2 {
   font-family: OutfitExtraBold;
   color: #FE5B3E;
-  font-size: 3rem;
+  font-size: 3.5rem;
     line-height: 5.4rem;
 
 
@@ -577,6 +577,13 @@ section.drive-care {
   color: #333;
 }
 
+.carsContainerGeral{
+    background: #f7f8f9;
+    margin: 2rem;
+    border-radius: 12px;
+    font-family: OutfitNormal;
+}
+
 .cars-section {
   background: #f7f8f9;
   padding: 2rem;
@@ -797,10 +804,10 @@ section.drive-care {
     }
 
     .hero-content h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-      line-height: 1.2;
-    }
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
 
     .hero-content h1 span {
       color: #FF5A3C;
@@ -822,6 +829,86 @@ section.drive-care {
       color: white;
     }
 
+
+    .footerBackground{
+      background: #f4f4f4;
+      padding-top: 5rem;
+    }
+
+    .footer {
+      background: #f4f4f4;
+      font-family: Arial, sans-serif;
+      width: 75%;
+      justify-self: center;
+    }
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  
+
+}
+
+.footer-section h3{
+    margin-bottom: 1rem;
+    color: #222222;
+    font-size: 1.99rem;
+}
+
+.footer-section h4 {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    color: rgb(97, 97, 97);
+}
+
+.footer-section button {
+  background: #ff4b2b;
+  border: none;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 1rem;
+  margin-left: 5rem;
+}
+
+@media (max-width: 768px) {
+  .footer-container{
+    flex-direction: column;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 
 /* ======== Media Queries  ======== */
@@ -971,6 +1058,14 @@ section.drive-care {
   .cars-filters {
     display: none;
   }
+
+  .hero-content h1 {
+    font-size: 4.4rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    width: 85%;
+    justify-self: center;
+}
 
 
 
