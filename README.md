@@ -1,35 +1,44 @@
-﻿# 🚗 Carzin - Plataforma de Aluguel de Carros
+﻿# 🚗 Carzin - Plataforma de Aluguel de Carros  
 
-Uma interface moderna e totalmente responsiva para serviços de aluguel de carros. Desenvolvida com foco em desempenho, experiência do usuário e facilidade de uso, essa plataforma oferece uma solução visualmente atraente e funcional para empresas que trabalham com locação de veículos.
+Uma interface moderna e totalmente responsiva para uma plataforma fictícia de aluguel de carros. Criada com foco no visual, usabilidade e experiência do usuário, o projeto entrega um layout limpo, atraente e adaptável a diferentes dispositivos.
 
----
+O projeto foi inspirado em um design original (link em breve abaixo) e recriado como prática para treinar **layout, responsividade e estilização** em HTML e CSS.  
 
-## 🖼️ Preview
-
-![Preview do projeto](/images/telaInicialReadme.png)
+> ⚠️ Este projeto **não possui funcionalidades** além da navegação visual. O foco está na interface, design responsivo e fidelidade ao modelo original.  
 
 ---
 
-## 📚 Funcionalidades
+## 🖼️ Preview  
 
-- 📱 Interface responsiva e mobile-friendly
-- 🔍 Pesquisa rápida e visual de veículos
-- 🧾 Sistema de reserva simples e direto
-- 🚘 Galeria de carros com categorias (SUV, Sedã, Elétrico, etc.)
-- 📋 Seção com informações de serviços e vantagens
-- 📅 Agendamento de locações online
+![Preview do projeto](/images/telaInicialReadme.png)  
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 📌 Original  
 
-- HTML5
-- CSS3 (ou Tailwind CSS, se aplicável)
-- Ícones (como Font Awesome ou outro kit de ícones)
+[![Ver design original](https://img.shields.io/badge/🎨%20Ver%20Design%20Original-orange?style=for-the-badge)](https://www.figma.com/design/0kNo6sQoHUr5dBcw3BT5Yr/Untitled?node-id=0-1&p=f&t=rL1ocz4CzGbmqStF-0)
 
 ---
 
-## 📦 Instalação
 
-1. Clone o repositório:
-git clone https://github.com/Jose7764/Carzin
+## 🎨 Sobre o Projeto  
+- Tema: **site de locadora de veículos**. 
+- Foco principal no **design responsivo** (desktop e mobile).  
+- Reprodução fiel de um layout profissional.  
+- Exercício para praticar **HTML5 + CSS3** e boas práticas de estruturação visual.  
+
+---
+
+## 🛠️ Tecnologias Utilizadas  
+
+- **HTML5**  
+- **CSS3** (puro, sem frameworks)  
+
+
+---
+
+## 📦 Instalação  
+
+1. Clone o repositório:  
+   ```bash
+   git clone https://github.com/Jose7764/Carzin
