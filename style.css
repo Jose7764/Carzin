@@ -716,13 +716,22 @@ section.drive-care {
   }
 
   .pagination-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 15px;
-  padding: 10px;
-  font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 15px;
+    padding: 3rem;
+    
 }
+
+.pagination-divisor{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
 
 
 /* ============================================================================= */
@@ -746,13 +755,12 @@ section.drive-care {
   display: flex;
   align-items: center;
   gap: 5px;
-  font-size: 14px;
+  font-size: 1rem;
   color: #555;
-  user-select: none;
+  align-self: center;
 }
 
-.page-info input[type="number"] {
-  width: 50px;
+.page-info input{
   padding: 5px 8px;
   border-radius: 8px;
   border: 1px solid #ccc;
@@ -764,6 +772,7 @@ section.drive-care {
 .nav-arrows {
   display: flex;
   gap: 10px;
+  display: none;
 }
 
 .btn-arrow {
@@ -833,6 +842,7 @@ section.drive-care {
     .footerBackground{
       background: #f4f4f4;
       padding-top: 5rem;
+      padding-bottom: 3rem;
     }
 
     .footer {
@@ -880,7 +890,7 @@ section.drive-care {
   color: white;
   padding: 0.7rem 1.2rem;
   border-radius: 5px;
-  cursor: pointer;
+  
 }
 
 .footer-bottom {
@@ -888,16 +898,30 @@ section.drive-care {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  
   align-items: center;
   gap: 1rem;
   padding-top: 1rem;
+}
+.footer-bottom h5{
+  color: #5b5b5b;
+  font-weight: 200;
 }
 
 .footer-icons {
   display: flex;
   gap: 1rem;
-  margin-left: 5rem;
+ 
 }
+
+.footerText{
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  justify-self: center;
+}
+
+
 
 @media (max-width: 768px) {
   .footer-container{
@@ -907,6 +931,7 @@ section.drive-care {
   .footer-bottom {
     flex-direction: column;
     text-align: center;
+    align-items: start;
   }
 }
 
@@ -914,6 +939,8 @@ section.drive-care {
 /* ======== Media Queries  ======== */
 
 @media (min-width: 1024px) {
+
+  
   .headerMobile {
     display: none;
   }
@@ -933,6 +960,22 @@ section.drive-care {
     height: 100vh;
     justify-content: space-around;
   }
+
+  .pagination-divisor{
+    flex-direction: row;
+    width: 25%;
+  }
+
+  .pagination-section{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-arrows {
+  display: block;
+}
+
+
 
   .imageStart {
     width: 60%;
@@ -1077,6 +1120,19 @@ section.drive-care {
     .car-grid {
       grid-template-columns: repeat(4 , 1fr);
     }
+
+
+    .footer-bottom {
+      flex-direction: row;
+      
+    }
+     
+    .footerText{ 
+      width: 40%;
+    }
+    
+
+    
   }
 
 
